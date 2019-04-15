@@ -1,9 +1,9 @@
 <template>
   <div class="film-list">
-    <div class="city-fixed">
+    <router-link to='/city' class="city-fixed">
       <span>深圳</span>
       <i class="iconfont icon-xiala"></i>
-    </div>
+    </router-link>
 
     <Banner :banners="bannerList"></Banner>
 
