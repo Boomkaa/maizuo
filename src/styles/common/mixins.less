@@ -1,0 +1,40 @@
+.border-lv {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  transform-origin: 0 100%;
+  transform: scaleY(.5);
+}
+
+.border-1-top {
+  position: relative;
+  &::before {
+    .border-lv;
+    top: 0;
+    border-top: 1px solid #ededed;
+  }
+}
+.border-1-bottom {
+  position: relative;
+  &::after {
+    .border-lv;
+    bottom: 0;
+    border-bottom: 1px solid #ededed;
+  }
+}
+.border-1 {
+  position: relative;
+  &::after {
+    content: "";
+    transform: scale(.5);
+    position: absolute;
+    border: 1px solid #ff5f16;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    border-radius: 4px;
+  }
+}

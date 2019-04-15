@@ -1,15 +1,16 @@
 <template>
-  <div id="app">
-    我进来了！！！
-  </div>
+  <keep-alive>
+    <router-view></router-view>
+  </keep-alive>
 </template>
 
 <script>
-
 export default {
   name: 'app'
 }
 </script>
 
-<style>
+<style lang="less">
+@import './styles/common/reset';
+
 </style>
